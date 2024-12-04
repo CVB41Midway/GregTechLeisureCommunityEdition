@@ -5,8 +5,8 @@ ServerEvents.recipes(event => {
       .itemInputs('288x gtceu:platinum_group_sludge_dust')
       .inputFluids('gtceu:aqua_regia 57600')
       .circuit(1)
-      .EUt(GTValues.VA[GTValues.EV])
-      .duration(7200)
+      .EUt(GTValues.VA[GTValues.LuV])
+      .duration(1200)
       .itemOutputs('16x gtceu:platinum_dust' , '16x gtceu:palladium_dust' , '15x gtceu:ruthenium_dust' , '8x gtceu:iridium_dust' , '12x gtceu:rhodium_dust' , '8x gtceu:osmium_dust')
 
     gtr.arc_generator('ae2:charged_certus_quartz_crystal')
@@ -523,20 +523,23 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV])
         .duration(20 * 30)
       
-    gtr.assembler('platinum_processor')
+    gtr.assembly_line('platinum_processor')
         .itemInputs(
             '4x gtceu:electric_blast_furnace',
-            '4x #gtceu:circuits/luv',
-            '4x gtceu:ev_robot_arm',
-            '8x gtceu:ev_fluid_regulator',
-            '8x gtceu:ev_electric_pump',
-            '16x gtceu:stainless_steel_frame')
+            '4x #gtceu:circuits/zpm',
+            '4x gtceu:iv_robot_arm',
+            '8x gtceu:iv_fluid_regulator',
+            '8x gtceu:iv_electric_pump',
+            '16x gtceu:stainless_steel_frame', 
+            '8x gtceu:hssg_frame', 
+            '4x gtceu:chemical_plant', 
+            '8x gtceu:hssg_coil_block')
         .inputFluids('gtceu:tin 4608')
         .itemOutputs('gtceu:platinum_processor')
-        .EUt(GTValues.VA[GTValues.EV])
+        .EUt(GTValues.VA[GTValues.LuV])
         .duration(600)
 
-    gtr.assembler('eye_of_wooden')
+      gtr.assembler('eye_of_wooden')
         .itemInputs(
             '16x gtceu:electric_blast_furnace',
             '16x minecraft:bricks',
@@ -551,7 +554,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('gtceu:eye_of_wooden')
         .EUt(GTValues.VA[GTValues.LV])
         .duration(600)
-
+        
     event.shaped('gtceu:extractor_core',[
       'XOX',
       'CAC',

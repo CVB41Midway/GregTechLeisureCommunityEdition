@@ -1191,6 +1191,28 @@
 			x: -2.0d
 			y: -2.0d
 		}
+		{
+			dependencies: ["40C39645B1DE2488"]
+			description: [
+				"来自原始人的鸿蒙之眼，使用錾制石砖创造一个..宇宙？"
+				"这款机器需要的输出仓太多，无法通过正常方式输出"
+				"使用任务送的ME输出总线"
+			]
+			id: "627C8D77333A5313"
+			rewards: [{
+				id: "70D00349A077664F"
+				item: "gtceu:me_output_bus"
+				type: "item"
+			}]
+			subtitle: "创建一个微缩宇宙。。。啊不好意思走错了"
+			tasks: [{
+				id: "25FA20588FE9B120"
+				item: "gtceu:eye_of_wooden"
+				type: "item"
+			}]
+			x: 14.0d
+			y: -1.0d
+		}
 	]
 	subtitle: ["Tier1-LV"]
 	title: "低压"
